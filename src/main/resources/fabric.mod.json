@@ -16,11 +16,6 @@
     "mixins": [
         "moreoptions.mixins.json"
     ],
-    "entrypoints": {
-        "client": [
-            "user11681.optional.client.Optional::init"
-        ]
-    },
     "depends": {
         "fabricloader": "*"
     }

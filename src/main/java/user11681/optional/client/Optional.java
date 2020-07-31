@@ -6,23 +6,12 @@ import java.util.List;
 import java.util.Map;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.options.BooleanOption;
-import net.minecraft.client.options.DoubleOption;
 import net.minecraft.client.options.Option;
-import net.minecraft.text.LiteralText;
 import user11681.optional.asm.accessor.OptionalOption;
 
 @Environment(EnvType.CLIENT)
 public class Optional {
     private static final Map<String, List<OptionalOption>> options = new Reference2ReferenceOpenHashMap<>();
-
-    public static double value;
-    public static boolean hideArm;
-
-    public static void init() {
-        addVideoOption(new DoubleOption("optional", 123, 234, 2, o -> value, (o, d) -> value = d, (o, d) -> new LiteralText("optional: " + value)));
-        addVideoOption(new BooleanOption("hide arm", o -> hideArm, (o, b) -> hideArm = b));
-    }
 
     public static OptionalOption addVideoOption(final Option option) {
         return addVideoOption(option, false, "minecraft");
