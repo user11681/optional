@@ -1,0 +1,7 @@
+
+(firefox:571155): Gtk-WARNING **: 02:08:00.170: Locale not supported by C library.
+	Using the fallback 'C' locale.
+kf5.kio.gui: Failed to register new cgroup: "apps-userapp\\x2dfirefox developer edition\\x2dzrw9g0-b688d6afa64a40d194818cfafce29c09.scope"
+
+(firefox:571487): Gtk-WARNING **: 02:10:18.374: Locale not supported by C library.
+	Using the fallback 'C' locale.
