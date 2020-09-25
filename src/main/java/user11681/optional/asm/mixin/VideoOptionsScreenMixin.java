@@ -22,7 +22,7 @@ public class VideoOptionsScreenMixin extends GameOptionsScreen {
     @Shadow
     @Final
     @Mutable
-    @SuppressWarnings("unused")
+    @SuppressWarnings({"unused", "RedundantSuppression"})
     private static final Option[] OPTIONS = addButtons();
 
     public VideoOptionsScreenMixin(final Screen parent, final GameOptions gameOptions, final Text title) {
